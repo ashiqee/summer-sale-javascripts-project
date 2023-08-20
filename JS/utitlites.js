@@ -46,3 +46,11 @@ function enableCouponBtn() {
     inputText.value = "";
   }
 }
+
+// copy coupon
+function copyCode() {
+  const copyValue = getProductName("coupon-copy");
+
+  navigator.clipboard(copyValue.value);
+  alert("coupon copy done");
+}
